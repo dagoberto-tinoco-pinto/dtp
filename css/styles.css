@@ -10978,10 +10978,12 @@ section.resume-section .resume-section-content {
   }
 }
 
-#popup{
-  background-color: white;
-  border-radius: 8px;
-  color: #808080;
+.popup{
+  background-color: #212529;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: var(--bs-gray);
+  color: white;
   font-family: sans-serif;
   padding: 10px;
   animation: mostrar 0.25s ease-out;
@@ -10997,16 +10999,35 @@ section.resume-section .resume-section-content {
   color: #BD5D38;
   border: none;
   padding: 0;
-  font-size: 1em; /* Tamaño del icono (ajústalo si es necesario) */
+  font-size: 1em;
   cursor: pointer;
-  text-decoration: none; /* Para quitar el subrayado predeterminado de los enlaces */
+  text-decoration: none;
 }
 
 .btn-icon-plus:hover {
-  color: #808080; /* Un azul más oscuro al pasar el ratón */
-  text-decoration: underline; /* Subrayado al pasar el ratón (opcional) */
+  color: #808080;
+  text-decoration: underline; 
 }
 
 .btn-icon-plus i {
-  margin-right: 0; /* No necesita margen a la derecha ya que no hay texto */
+  margin-right: 0;
+}
+
+.btn-icon-x {
+  background: none;
+  color: #BD5D38;
+  border: none;
+  padding: 0;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-icon-x:hover {
+  color: darkred;
+  text-decoration: underline; 
+}
+
+.btn-icon-x i {
+  margin-right: 0;
 }
